@@ -1,2 +1,2 @@
 build_script:
-- cmake --build C:\projects\ps3tools\Makefile
+- cmake --build C:\projects\ps3tools\

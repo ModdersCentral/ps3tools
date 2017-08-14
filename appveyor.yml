@@ -15,5 +15,7 @@ environment:
       
 build_script:
 - copy c:\MinGW\bin\mingw32-make.exe c:\MinGW\bin\make.exe
+- setx PATH "c:\MinGW\bin";"
+#C:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1
 - make Makefile
         #- C:\mingw64\bin;%PATH%

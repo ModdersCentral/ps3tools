@@ -6,4 +6,4 @@ compiler:
   
   build:
   ci:
-- ./configure
+- ./Makefile

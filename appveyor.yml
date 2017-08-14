@@ -14,4 +14,5 @@ environment:
       
       
 build_script:
-        - if [%tbs_tools%]==[mingw] if [%tbs_arch%]==[x64] SET PATH=C:\mingw64\bin;%PATH%
+- ./make Makefile
+        #- C:\mingw64\bin;%PATH%

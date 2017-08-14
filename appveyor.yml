@@ -1,2 +1,17 @@
+version: 1.6.18.{build}
+shallow_clone: true
+os: Visual Studio 2015
+
+environment:
+  matrix:
+    - tbs_arch: "x86"
+      tbs_tools: "mingw"
+      tbs_static_runtime: 1
+    
+    - tbs_arch: "x64"
+      tbs_tools: "mingw"
+      tbs_static_runtime: 1
+      
+      
 build_script:
-- cmake --build C:\projects\ps3tools\
+        - if [%tbs_tools%]==[mingw] if [%tbs_arch%]==[x64] SET PATH=C:\mingw64\bin;%PATH%

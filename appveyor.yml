@@ -1,3 +1,2 @@
 build_script:
-- mingw32-make C:\projects\ps3tools
-- cmake C:\projects\ps3tools\Makefile
+- cmake --build C:\projects\ps3tools\Makefile
